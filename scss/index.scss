@@ -9,8 +9,12 @@ body {
     background: black;
 }
 
-p, a, span {
+p, a, span, h1, h2, h3, h4, h5, h6, button {
     color: #FFFFFF;
+}
+
+p {
+    margin: 0;
 }
 
 .wrapper {
@@ -66,7 +70,7 @@ p, a, span {
     align-content: center;
 }
 
-.greeting {
+.centerText {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -81,11 +85,10 @@ p, a, span {
         font-style: normal;
         font-weight: 300;
         font-size: 16px;
-        line-height: 24px;
         color: #ffffff;
         margin: 0;
         padding: 0;
-        margin-bottom: 25px;
+        margin-bottom: 20px;
     }
 }
 
@@ -181,19 +184,195 @@ p, a, span {
         font-weight: 500;
         font-size: 20px;
         text-transform: uppercase;
-        text-align: center;
-        margin-top: 28px;
-        margin-bottom: 8px;
+        &-secMargin {
+            margin-top: 28px;
+            margin-bottom: 8px;
+        }
+        &-center {
+            text-align: center;
+        }
     }
     &__list {
-        padding-left: 27px;
-        max-width: 270px;
+        padding-left: 0px;
         margin-bottom: 28px;
+        &-pl {
+            padding-left: 27px;
+        }
+        &-mw {
+            max-width: 270px;
+        }
     }
     &__p {
         font-style: normal;
         font-weight: 300;
         font-size: 16px;
         margin-bottom: 16px;
+        &-altC {
+            color: #e5e5e5;
+        }
     }
+}
+
+.thirdScreenWrapper {
+    margin-top: 26px;
+    margin-bottom: 100px;
+}
+
+.fourthScreenWrapper {
+    &__title {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 32px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    &__waves {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+}
+
+.twoColumnLayout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &_bottom {
+        margin-bottom: 40px;
+    }
+    &_top {
+        margin-top: 80px;
+    }
+    &_end {
+        align-items: flex-end;
+    }
+    &__col {
+        display: flex;
+        flex-direction: column;
+        &-fourthScreen {
+            width: 485px;
+            height: 486px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        &-border1 {
+            background-image: url('img/fourthScreenBorder_1.svg');
+        }
+        &-border2 {
+            background-image: url('img/fourthScreenBorder_2.svg');
+        }
+    }
+    &__text {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        &-bold {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 28px;
+            margin-bottom: 16px;
+        }
+    }
+    &__button {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 20px;
+        padding: 12px 24px;
+        background: none;
+        border: none;
+        background-image: url('img/fourthScreenButton.svg');
+        background-repeat: no-repeat;
+        background-position: -32px -10px;
+        width: 137px;
+        height: 44px;
+    }
+}
+
+.seasonTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &_bottom {
+        margin-bottom: 24px;
+    }
+    &__season {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 22px;
+        color: #BABABA;
+    }
+    &__online {
+        text-transform: uppercase;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 16px;
+        &-spec1 {
+            background: linear-gradient(122.02deg, #0D51FF 2.98%, #9F1FFF 109.61%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        &-spec2 {
+            background: linear-gradient(95.65deg, #FF5176 1.66%, #FF5E2D 98.56%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}
+
+.seasonPadding {
+    padding: 40px 60px;
+}
+
+.trailerWrapper {
+    position: relative;
+    &__thubnail {
+        width: 196px;
+        height: 99px;
+    }
+    &__title {
+        position: absolute;
+        left: 60px;
+        top: 29px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 16px;
+        color: #000000;
+        max-width: 68px;
+        text-decoration: none;
+        &:before {
+            content: '';
+            width: 42px;
+            height: 42px;
+            position: absolute;
+            left: -50px;
+            top: -6px;
+            background-image: url("data:image/svg+xml,%3Csvg width='42' height='42' viewBox='0 0 42 42' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_b)'%3E%3Ccircle cx='21' cy='21' r='21' fill='black'/%3E%3C/g%3E%3Cg clip-path='url(%23clip0)'%3E%3Cpath d='M27.8706 19.1537L18.4206 13.3286C17.7369 12.9077 16.9103 12.8902 16.2094 13.2818C15.5085 13.6733 15.0901 14.3864 15.0901 15.1893V26.7865C15.0901 28.0005 16.0682 28.9934 17.2704 29C17.2737 29 17.277 29 17.2802 29C17.6559 29 18.0474 28.8822 18.413 28.6591C18.7072 28.4796 18.8002 28.0957 18.6207 27.8015C18.4412 27.5074 18.0572 27.4144 17.7632 27.5939C17.5921 27.6982 17.4251 27.7522 17.2771 27.7521C16.8235 27.7497 16.3379 27.3611 16.3379 26.7866V15.1893C16.3379 14.8449 16.5174 14.5391 16.818 14.3711C17.1187 14.2031 17.4732 14.2106 17.7661 14.391L27.2161 20.2161C27.5002 20.391 27.6627 20.6826 27.662 21.0162C27.6613 21.3497 27.4976 21.6406 27.212 21.8149L20.3796 25.9983C20.0857 26.1782 19.9933 26.5623 20.1733 26.8562C20.3532 27.15 20.7373 27.2424 21.0312 27.0625L27.8628 22.8796C28.5169 22.4806 28.9083 21.785 28.9099 21.0187C28.9114 20.2525 28.5228 19.5552 27.8706 19.1537Z' fill='white'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_b' x='-1' y='-1' width='44' height='44' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeGaussianBlur in='BackgroundImage' stdDeviation='0.5'/%3E%3CfeComposite in2='SourceAlpha' operator='in' result='effect1_backgroundBlur'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect1_backgroundBlur' result='shape'/%3E%3C/filter%3E%3CclipPath id='clip0'%3E%3Crect width='16' height='16' fill='white' transform='translate(14 13)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+        }
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.seasonMore {
+    border: 0px;
+    padding: 12px 24px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    &-bg1 {
+        background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+        box-shadow: 0px 22px 44px -12px rgba(187, 78, 157, 0.35);
+    }
+    &-bg2 {
+        background: linear-gradient(90deg, #FF5178 0%, #FF5E2B 100%);
+        box-shadow: 0px 22px 44px -12px rgba(255, 66, 99, 0.35);
+    }
+    cursor: pointer;
 }
