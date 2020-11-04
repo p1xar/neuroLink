@@ -1,0 +1,125 @@
+@import 'normalize';
+
+* {
+    font-family: 'Gerbera';
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    background: black;
+}
+
+p, a, span {
+    color: #FFFFFF;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1110px;
+    &-header {
+        display: flex;
+        height: 60px;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.header {
+    background: rgba(251, 251, 251, 0.5);
+    border-bottom: 1px solid #333333;
+}
+
+.headerLinks {
+    &__link {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 16px;
+        color: #000000;
+        text-decoration: none;
+        &:not(:last-child):not(.headerLinks__link-watch) {
+            margin-right: 20px;
+        }
+        &:hover {
+            text-decoration: underline;
+        }
+
+        &-watch {
+            color: #ffffff;
+            padding: 10px 24px;
+            background-color: #000000;
+            border-radius: 5px;
+            margin-right: 45px;
+        }
+    }
+    &-middle {
+        margin: 0 auto
+    }
+}
+
+.firstScreen {
+    height: 700px;
+    background-image: url('img/firstScreenBg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-content: center;
+}
+
+.greeting {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    &__img {
+        width: 394px;
+        height: 217px;
+        margin-bottom: 32px;
+    }
+    &__text {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        color: #ffffff;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 25px;
+    }
+}
+
+.secondSreenWrapper {
+    max-width: 810px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 64px;
+}
+
+.circle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(img/circle.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 180px;
+    height: 180px;
+    &__title {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+    }
+    &__img {
+        width: 70px;
+        height: 70px;
+    }
+}
