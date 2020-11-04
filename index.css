@@ -423,14 +423,18 @@ p, a, span {
   margin-bottom: 25px;
 }
 
-.secondSreenWrapper {
+.secondScreenWrapper {
   max-width: 810px;
   margin: 0 auto;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
   margin-top: 100px;
+}
+.secondScreenWrapper__row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin-bottom: 64px;
 }
 
@@ -456,4 +460,74 @@ p, a, span {
 .circle__img {
   width: 70px;
   height: 70px;
+}
+
+.neurProductWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.neurProductTitle {
+  width: 546px;
+  height: 170px;
+  background-repeat: no-repeat;
+  background-image: url("img/outlineNeur.svg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 25px;
+}
+.neurProductTitle__title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.neurProductCols {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.neurProductCols__col {
+  width: 335px;
+  position: relative;
+  z-index: 2;
+  top: -3px;
+}
+.neurProductCols__col-leftBg, .neurProductCols__col-rightBg {
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.neurProductCols__col-leftBg {
+  background-image: url("img/outlineNeurLeftCol.svg");
+}
+.neurProductCols__col-rightBg {
+  background-image: url("img/outlineNeurRightCol.svg");
+}
+.neurProductCols__title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 28px;
+  margin-bottom: 8px;
+}
+.neurProductCols__list {
+  padding-left: 27px;
+  max-width: 270px;
+  margin-bottom: 28px;
+}
+.neurProductCols__p {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  margin-bottom: 16px;
 }
