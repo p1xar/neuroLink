@@ -364,6 +364,10 @@ p {
   justify-content: space-between;
   align-items: center;
 }
+.wrapper-sixthScreen {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 
 .header {
   background: rgba(251, 251, 251, 0.5);
@@ -424,6 +428,9 @@ p {
   margin: 0;
   padding: 0;
   margin-bottom: 20px;
+}
+.centerText__text-gray {
+  color: #333333;
 }
 
 .secondScreenWrapper {
@@ -530,12 +537,16 @@ p {
 .neurProductCols__list {
   padding-left: 0px;
   margin-bottom: 28px;
+  list-style-type: none;
 }
 .neurProductCols__list-pl {
   padding-left: 27px;
 }
 .neurProductCols__list-mw {
   max-width: 270px;
+}
+.neurProductCols__list-mbSixth {
+  margin-bottom: 32px;
 }
 .neurProductCols__p {
   font-style: normal;
@@ -545,6 +556,9 @@ p {
 }
 .neurProductCols__p-altC {
   color: #e5e5e5;
+}
+.neurProductCols__p-lh28 {
+  line-height: 28px;
 }
 
 .thirdScreenWrapper {
@@ -580,21 +594,31 @@ p {
 .twoColumnLayout_end {
   align-items: flex-end;
 }
+.twoColumnLayout_mindkit {
+  margin-bottom: 90px;
+}
+.twoColumnLayout_mindkit p, .twoColumnLayout_mindkit span, .twoColumnLayout_mindkit h3 {
+  color: #000000;
+}
 .twoColumnLayout__col {
   display: flex;
   flex-direction: column;
 }
 .twoColumnLayout__col-fourthScreen {
   width: 485px;
-  height: 486px;
+  height: 440px;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-bottom: 100px;
 }
 .twoColumnLayout__col-border1 {
   background-image: url("img/fourthScreenBorder_1.svg");
 }
 .twoColumnLayout__col-border2 {
   background-image: url("img/fourthScreenBorder_2.svg");
+}
+.twoColumnLayout__col-mindkit {
+  max-width: 473px;
 }
 .twoColumnLayout__text {
   font-style: normal;
@@ -622,6 +646,7 @@ p {
   background-position: -32px -10px;
   width: 137px;
   height: 44px;
+  cursor: pointer;
 }
 
 .seasonTitle {
@@ -704,7 +729,32 @@ p {
   background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
   box-shadow: 0px 22px 44px -12px rgba(187, 78, 157, 0.35);
 }
+.seasonMore-sh1 {
+  box-shadow: 0px 22px 44px -12px rgba(187, 78, 157, 0.35);
+}
+.seasonMore-wSixth {
+  width: 161px;
+}
 .seasonMore-bg2 {
   background: linear-gradient(90deg, #FF5178 0%, #FF5E2B 100%);
   box-shadow: 0px 22px 44px -12px rgba(255, 66, 99, 0.35);
+}
+
+.sixthScreen {
+  background-color: #ffffff;
+}
+.sixthScreen__preTitle {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 20px;
+}
+.sixthScreen__preTitle-gray {
+  color: #575757;
+}
+.sixthScreen__title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
 }

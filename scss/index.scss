@@ -26,6 +26,10 @@ p {
         justify-content: space-between;
         align-items: center;
     }
+    &-sixthScreen {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
 }
 
 .header {
@@ -89,6 +93,9 @@ p {
         margin: 0;
         padding: 0;
         margin-bottom: 20px;
+        &-gray {
+            color: #333333;
+        }
     }
 }
 
@@ -195,11 +202,15 @@ p {
     &__list {
         padding-left: 0px;
         margin-bottom: 28px;
+        list-style-type: none;
         &-pl {
             padding-left: 27px;
         }
         &-mw {
             max-width: 270px;
+        }
+        &-mbSixth {
+            margin-bottom: 32px;
         }
     }
     &__p {
@@ -209,6 +220,9 @@ p {
         margin-bottom: 16px;
         &-altC {
             color: #e5e5e5;
+        }
+        &-lh28 {
+            line-height: 28px;
         }
     }
 }
@@ -247,20 +261,30 @@ p {
     &_end {
         align-items: flex-end;
     }
+    &_mindkit {
+        margin-bottom: 90px;
+        p, span, h3 {
+            color: #000000;
+        }
+    }
     &__col {
         display: flex;
         flex-direction: column;
         &-fourthScreen {
             width: 485px;
-            height: 486px;
+            height: 440px;
             background-repeat: no-repeat;
             background-size: cover;
+            margin-bottom: 100px;
         }
         &-border1 {
             background-image: url('img/fourthScreenBorder_1.svg');
         }
         &-border2 {
             background-image: url('img/fourthScreenBorder_2.svg');
+        }
+        &-mindkit {
+            max-width: 473px;
         }
     }
     &__text {
@@ -289,6 +313,7 @@ p {
         background-position: -32px -10px;
         width: 137px;
         height: 44px;
+        cursor: pointer;
     }
 }
 
@@ -370,9 +395,34 @@ p {
         background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
         box-shadow: 0px 22px 44px -12px rgba(187, 78, 157, 0.35);
     }
+    &-sh1 {
+        box-shadow: 0px 22px 44px -12px rgba(187, 78, 157, 0.35);
+    }
+    &-wSixth {
+        width: 161px;
+    }
     &-bg2 {
         background: linear-gradient(90deg, #FF5178 0%, #FF5E2B 100%);
         box-shadow: 0px 22px 44px -12px rgba(255, 66, 99, 0.35);
     }
     cursor: pointer;
+}
+
+.sixthScreen {
+    background-color: #ffffff;
+    &__preTitle {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 20px;
+        &-gray {
+            color: #575757;
+        }
+    }
+    &__title {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 32px;
+    }
 }
