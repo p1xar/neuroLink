@@ -399,13 +399,19 @@ p {
   margin: 0 auto;
 }
 
-.firstScreen {
-  height: 700px;
-  background-image: url("img/firstScreenBg.png");
+.customBg {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   align-content: center;
+}
+.customBg-firstScreen {
+  height: 700px;
+  background-image: url("img/firstScreenBg.png");
+}
+.customBg-seventhScreen {
+  height: 566px;
+  background-image: url("img/seventhScreenBg.png");
 }
 
 .centerText {
@@ -560,6 +566,12 @@ p {
 .neurProductCols__p-lh28 {
   line-height: 28px;
 }
+.neurProductCols__p-lh24 {
+  line-height: 24px;
+}
+.neurProductCols__p-f14 {
+  font-size: 14px;
+}
 
 .thirdScreenWrapper {
   margin-top: 26px;
@@ -583,6 +595,8 @@ p {
 .twoColumnLayout {
   display: flex;
   justify-content: space-between;
+}
+.twoColumnLayout_itemsCenter {
   align-items: center;
 }
 .twoColumnLayout_bottom {
@@ -619,6 +633,14 @@ p {
 }
 .twoColumnLayout__col-mindkit {
   max-width: 473px;
+}
+.twoColumnLayout__col-col5 {
+  flex-basis: 41.66666667%;
+  max-width: 41.66666667%;
+}
+.twoColumnLayout__col-col7 {
+  flex-basis: 58.33333333%;
+  max-width: 58.33333333%;
 }
 .twoColumnLayout__text {
   font-style: normal;
@@ -757,4 +779,49 @@ p {
   font-weight: 500;
   font-size: 24px;
   line-height: 32px;
+}
+
+.seventhScreenCarousel {
+  display: flex;
+  justify-content: space-between;
+}
+
+.seventhScreenCarouselCard {
+  display: flex;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.85);
+  box-shadow: 2px 38px 44px -12px rgba(115, 28, 106, 0.25);
+  border-radius: 5px;
+  padding-top: 19px;
+  padding-left: 10px;
+  padding-right: 10px;
+  max-width: 255px;
+  margin-top: 53px;
+  cursor: pointer;
+}
+.seventhScreenCarouselCard-active {
+  margin-top: 0px;
+  padding-top: 24px;
+  padding-left: 16px;
+  padding-right: 16px;
+  box-shadow: 2px 38px 44px -12px rgba(79, 133, 72, 0.25);
+}
+
+.seventhScreenCarouselProgress {
+  display: block;
+  margin-top: 50px;
+  width: 100%;
+  height: 1px;
+  position: relative;
+  background: rgba(0, 0, 0, 0.3);
+}
+.seventhScreenCarouselProgress__section-active {
+  width: 50%;
+  position: absolute;
+  height: 1px;
+  top: 1px;
+  background-color: #000000;
+}
+.seventhScreenCarouselProgress__section-active:nth-child(2) {
+  left: 50%;
 }
