@@ -341,22 +341,22 @@ template {
   display: flex;
   justify-content: space-between;
 }
-.twoColumnLayout_itemsCenter {
+.twoColumnLayout-itemsCenter {
   align-items: center;
 }
-.twoColumnLayout_bottom {
+.twoColumnLayout-bottom {
   margin-bottom: 40px;
 }
-.twoColumnLayout_top {
+.twoColumnLayout-top {
   margin-top: 80px;
 }
-.twoColumnLayout_end {
+.twoColumnLayout-end {
   align-items: flex-end;
 }
-.twoColumnLayout_mindkit {
+.twoColumnLayout-mindkit {
   margin-bottom: 90px;
 }
-.twoColumnLayout_mindkit p, .twoColumnLayout_mindkit span, .twoColumnLayout_mindkit h3 {
+.twoColumnLayout-mindkit p, .twoColumnLayout-mindkit span, .twoColumnLayout-mindkit h3 {
   color: #000000;
 }
 .twoColumnLayout-btmBorder {

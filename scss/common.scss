@@ -1,19 +1,19 @@
 .twoColumnLayout {
     display: flex;
     justify-content: space-between;
-    &_itemsCenter {
+    &-itemsCenter {
         align-items: center;
     }
-    &_bottom {
+    &-bottom {
         margin-bottom: 40px;
     }
-    &_top {
+    &-top {
         margin-top: 80px;
     }
-    &_end {
+    &-end {
         align-items: flex-end;
     }
-    &_mindkit {
+    &-mindkit {
         margin-bottom: 90px;
         p, span, h3 {
             color: #000000;
