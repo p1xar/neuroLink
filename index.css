@@ -403,6 +403,9 @@ template {
   flex-basis: 58.33333333%;
   max-width: 58.33333333%;
 }
+.twoColumnLayout__col-w50 {
+  width: 50%;
+}
 .twoColumnLayout__text {
   font-style: normal;
   font-weight: 300;
@@ -678,6 +681,121 @@ template {
 }
 .footer__link-mr16 {
   margin-right: 16px;
+}
+
+.customBg-login {
+  height: 750px;
+}
+.customBg-loginBg {
+  background-image: url("img/loginBg.png");
+}
+.customBg-registerBg {
+  background-image: url("img/registerBg.png");
+}
+
+.loginForm {
+  position: fixed;
+  background-color: #000000;
+  min-width: 540px;
+  min-height: 416px;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+}
+.loginForm__tab {
+  text-align: center;
+  color: #bebebe;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  cursor: pointer;
+}
+.loginForm__tab-active span {
+  color: #ffffff;
+}
+
+.loginFormWrapper {
+  padding: 20px 40px 20px 40px;
+}
+
+.loginTabs {
+  width: 100%;
+  background: #989898;
+  height: 1px;
+  margin-top: 14px;
+  position: relative;
+}
+.loginTabs__tab {
+  width: 50%;
+  height: 2px;
+}
+.loginTabs__tab-active {
+  position: absolute;
+  background-color: #ffffff;
+  top: 0px;
+  border-radius: 6px;
+}
+.loginTabs__tab-active:nth-child(2) {
+  left: 50%;
+}
+
+.loginInputs {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loginInput {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+.loginInput__label {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 4px;
+}
+.loginInput__input {
+  background: #232323;
+  border-radius: 8px;
+  border: 0px;
+  color: #ffffff;
+  padding-left: 16px;
+  width: 302px;
+  height: 44px;
+}
+.loginInput__submit {
+  border-radius: 5px;
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  border: 0;
+  padding: 12px 66px;
+  cursor: pointer;
+}
+.loginInput__submit-mt40 {
+  margin-top: 40px;
+}
+.loginInput__submit-login {
+  background: linear-gradient(92.2deg, #FDCF58 -4.76%, #FF0000 112.96%);
+  box-shadow: 0px 22px 44px -12px rgba(254, 88, 37, 0.25);
+}
+.loginInput__submit-register {
+  background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+  box-shadow: 0px 22px 44px -12px rgba(187, 78, 157, 0.35);
+}
+.loginInput__restore {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  color: #686868;
+}
+.loginInput__restore-mt12 {
+  margin-top: 12px;
 }
 
 * {

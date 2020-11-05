@@ -1,0 +1,97 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>NeuroLink</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="font/stylesheet.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!--
+                Markup with two tabs
+                If you are on login tab you should add those classes:
+                    0. customBg-loginBg on container
+                    1. loginForm__tab-active on first tab
+                    2. loginTabs__tab-active on progress bar
+                    3. loginInput__submit-login on submit button
+                If you are on register tab you should add those classes:
+                    0. customBg-registerBg on container
+                    1. loginForm__tab-active on second tab
+                    2. loginTabs__tab-active on progress bar
+                    3. loginInput__submit-register on submit button
+            -->
+    <div class="customBg customBg-login customBg-registerBg">
+        <header class="header">
+            <div class="wrapper wrapper-header">
+                <div class="headerLogo">
+                    <img class="headerLogo__img" src="img/logo.png" />
+                </div>
+                <div class="headerLinks headerLinks-middle">
+                    <a class="headerLinks__link" href="#">О платформе</a>
+                    <a class="headerLinks__link" href="#">1 сезон</a>
+                    <a class="headerLinks__link" href="#">2 сезон</a>
+                    <a class="headerLinks__link" href="#">Mindkit</a>
+                </div>
+                <div class="headerLinks">
+                    <a class="headerLinks__link headerLinks__link-watch" href="#">Начать просмотр</a>
+                    <a class="headerLinks__link" href="#">Войти</a>
+                </div>
+            </div>
+        </header>
+        <div class="loginForm">
+            <div class="loginFormWrapper">
+                <div class="twoColumnLayout">
+                    <div class="twoColumnLayout__col twoColumnLayout__col-w50">
+                        <span class="loginForm__tab">
+                            Войти
+                        </span>
+                    </div>
+                    <div class="twoColumnLayout__col twoColumnLayout__col-w50 loginForm__tab-active">
+                        <span class="loginForm__tab">
+                            Создать аккаунт
+                        </span>
+                    </div>
+                </div>
+                <div class="loginTabs">
+                    <div class="loginTabs__tab">
+                    </div>
+                    <div class="loginTabs__tab loginTabs__tab-active">
+                    </div>
+                </div>
+                <div class="loginInputs">
+                    <div class="loginInput">
+                        <span class="loginInput__label">
+                            Имя
+                        </span>
+                        <input class="loginInput__input" />
+                    </div>
+                    <div class="loginInput">
+                        <span class="loginInput__label">
+                            E-mail
+                        </span>
+                        <input class="loginInput__input" />
+                    </div>
+                    <div class="loginInput">
+                        <span class="loginInput__label">
+                            Пароль
+                        </span>
+                        <input class="loginInput__input" />
+                    </div>
+                    <input class="loginInput__submit loginInput__submit-register loginInput__submit-mt40" value="Готово"
+                        type="submit" />
+                    <a class="loginInput__restore loginInput__restore-mt12" href="#">Забыли пароль?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+</script>
+
+</html>
