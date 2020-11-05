@@ -422,8 +422,16 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   height: 100%;
+}
+.centerText-row {
+  flex-direction: row;
+}
+.centerText-relative {
+  position: relative;
+}
+.centerText-itemsCenter {
+  align-items: center;
 }
 .centerText__img {
   width: 394px;
@@ -438,9 +446,13 @@ p {
   margin: 0;
   padding: 0;
   margin-bottom: 20px;
+  text-decoration: none;
 }
 .centerText__text-gray {
   color: #333333;
+}
+.centerText__text-mr20 {
+  margin-right: 20px;
 }
 .centerText__text-lh28 {
   line-height: 28px;
@@ -983,4 +995,21 @@ p {
   border: 0;
   padding: 12px 66px;
   cursor: pointer;
+}
+
+.bottomLogo {
+  margin-bottom: 56px;
+}
+
+.bottomLinks__email {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+}
+.bottomLinks__email-gray {
+  color: #686868;
+}
+.bottomLinks__email-abs {
+  position: absolute;
+  right: 0px;
 }

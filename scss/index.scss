@@ -88,8 +88,16 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     height: 100%;
+    &-row {
+        flex-direction: row;
+    }
+    &-relative {
+        position: relative;
+    }
+    &-itemsCenter {
+        align-items: center;
+    }
     &__img {
         width: 394px;
         height: 217px;
@@ -103,8 +111,12 @@ p {
         margin: 0;
         padding: 0;
         margin-bottom: 20px;
+        text-decoration: none;
         &-gray {
             color: #333333;
+        }
+        &-mr20 {
+            margin-right: 20px;
         }
         &-lh28 {
             line-height: 28px;
@@ -652,5 +664,24 @@ p {
         border: 0;
         padding: 12px 66px;
         cursor: pointer;
+    }
+}
+
+.bottomLogo {
+    margin-bottom: 56px;
+}
+
+.bottomLinks {
+    &__email {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        &-gray {
+            color: #686868;
+        }
+        &-abs {
+            position: absolute;
+            right: 0px;
+        }
     }
 }
