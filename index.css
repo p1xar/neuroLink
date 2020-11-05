@@ -982,4 +982,5 @@ p {
   border-radius: 5px;
   border: 0;
   padding: 12px 66px;
+  cursor: pointer;
 }
